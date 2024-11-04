@@ -1,0 +1,89 @@
+/* src/components/CategoriesSection.css */
+
+.categories-section {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.categories-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.category-card {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10; 
+}
+
+.category-card p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}
+
+.category-card p:hover {
+  color: #007bff;
+}
+
+/* Subcategory styling */
+.subcategory-list {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: none;
+  position: absolute; /* Use absolute positioning to align with the card */
+  top: 0;
+  left: 100%; /* Align to the right of the category card */
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  min-width: 200px;
+  z-index: 9999; /* Ensures it overlays other content */
+}
+
+.subcategory-list li {
+  padding: 5px 0;
+  font-size: 0.9rem;
+}
+
+.subcategory-list li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.subcategory-list li a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Show subcategories on hover */
+.category-card:hover .subcategory-list {
+  display: block;
+}
+
+/* Adjust hover effect for category card */
+.category-card:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+.subcategory-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  min-width: 200px; /* Adjust width as needed */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  z-index: 9999; /* Ensure dropdown displays above other content */
+}
+
+

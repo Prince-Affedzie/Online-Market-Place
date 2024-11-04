@@ -1,0 +1,54 @@
+.vendor-spotlight-container {
+    width: 98%;
+    padding: 20px;
+    background-color: #ffff;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .vendor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .vendor-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .vendor-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .vendor-logo {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .vendor-info {
+    padding: 10px 0;
+  }
+  
+  .vendor-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .vendor-rating {
+    font-size: 14px;
+    color: #e67e22;
+  }
+  

@@ -1,0 +1,45 @@
+.trending-products-carousel {
+    padding: 10px;
+    background-color: #f9f9f9;
+   max-width: 1300px;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .carousel-item {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .carousel-product-image {
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .carousel-product-title {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .carousel-product-price {
+    font-size: 16px;
+    color: #e74c3c;
+  }
+  
